@@ -28,12 +28,6 @@ header h1 {
 
 .main-section {
     display: flex;
-    flex-wrap: wrap;
-}
-
-.background-section,
-.form-section {
-    flex: 1;
 }
 
 .background-section img {
@@ -41,7 +35,12 @@ header h1 {
     height: auto;
 }
 
+.background-section {
+    flex: 1;
+}
+
 .form-section {
+    flex: 1;
     padding: 40px;
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -85,10 +84,5 @@ button:hover {
     
     .main-section {
         flex-direction: column;
-    }
-
-    .background-section,
-    .form-section {
-        width: 100%;
     }
 }
