@@ -61,4 +61,18 @@ button {
     height: auto;
 }
 
-/* Ajouter plus de styles au besoin */
+/* Utilisation de Flexbox pour organiser les éléments du formulaire */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+}
+
+button {
+    max-width: 200px;
+    margin-top: 20px;
+}
