@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire d'inscription</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>ODIN</h1>
-        </div>
-    </header>
-    <main>
-        <section class="formulaire">
-            <h2>Créer un compte</h2>
-            <form action="#">
-                <label for="nom">Nom complet:</label>
-                <input type="text" id="nom" name="nom" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="motdepasse">Mot de passe:</label>
-                <input type="password" id="motdepasse" name="motdepasse" required>
-
-                <label for="confirmation">Confirmer le mot de passe:</label>
-                <input type="password" id="confirmation" name="confirmation" required>
-
-                <button type="submit">Créer un compte</button>
-            </form>
-        </section>
-        <section class="sidebar">
-            <img src="images/odin-logo.png" alt="Odin logo">
-            <p>Rejoignez la communauté Odin et développez vos compétences en programmation.</p>
-        </section>
-    </main>
+    <div class="container">
+        <header>
+            <h1>Nom du service</h1>
+            <img src="odin-logo.png" alt="Logo d'Odin">
+        </header>
+        <main>
+            <section class="background-section">
+                <img src="https://source.unsplash.com/random/1200x800" alt="Image de fond">
+            </section>
+            <section class="form-section">
+                <h2>Créer un compte</h2>
+                <form id="signup-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="username">Nom d'utilisateur</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmer le mot de passe</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <button type="submit">S'inscrire</button>
+                </form>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
