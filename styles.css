@@ -30,8 +30,9 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #4CAF50, #FFD700);
+    background: linear-gradient(135deg, #FF5733, #FFD700);
     clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    animation: moveShape1 10s infinite alternate;
 }
 
 .shape2 {
@@ -40,7 +41,7 @@ body, html {
     right: 0;
     width: 200px;
     height: 200px;
-    background-color: #FFD700;
+    background-color: #9B59B6;
     border-radius: 50%;
     z-index: 2;
 }
@@ -51,9 +52,10 @@ body, html {
     right: 0;
     width: 150px;
     height: 150px;
-    background-color: #4CAF50;
+    background-color: #3498DB;
     border-radius: 50%;
     z-index: 3;
+    animation: moveShape3 8s infinite alternate;
 }
 
 .shape4 {
@@ -62,9 +64,10 @@ body, html {
     left: 0;
     width: 150px;
     height: 150px;
-    background-color: #FFD700;
+    background-color: #E74C3C;
     border-radius: 50%;
     z-index: 4;
+    animation: moveShape4 12s infinite alternate;
 }
 
 .background-section .content {
@@ -127,4 +130,31 @@ button {
 
 button:hover {
     background: linear-gradient(135deg, #6BF178, #FFEC8B);
+}
+
+@keyframes moveShape1 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+@keyframes moveShape3 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50px, 50px);
+    }
+}
+
+@keyframes moveShape4 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(50px, -50px);
+    }
 }
