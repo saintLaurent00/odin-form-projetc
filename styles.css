@@ -35,16 +35,41 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.background-section {
-    background: url("https://source.unsplash.com/random/1200x800") no-repeat center center fixed;
-    background-size: cover;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.background-section .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+.background-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.background-section p {
+    font-size: 18px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .form-section {
     background-color: #f9f9f9;
-    padding: 20px;
+    padding: 40px;
 }
 
 form {
