@@ -5,46 +5,51 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+body, html {
+    height: 100%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 header h1 {
     font-size: 24px;
 }
 
-.main-section {
-    display: flex;
+header img {
+    max-height: 50px;
 }
 
-.background-section img {
-    width: 100%;
-    height: auto;
+.main-section {
+    display: flex;
+    height: 100%;
+}
+
+.background-section,
+.form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .background-section {
-    flex: 1;
+    background: url("https://source.unsplash.com/random/1200x800") no-repeat center center fixed;
+    background-size: cover;
 }
 
 .form-section {
-    flex: 1;
-    padding: 40px;
     background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
 }
 
 .form-group {
@@ -78,10 +83,6 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    
     .main-section {
         flex-direction: column;
     }
