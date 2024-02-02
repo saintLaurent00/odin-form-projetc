@@ -1,0 +1,64 @@
+/* Réinitialiser certains styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E5E7EB;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #596D48;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.background-section img {
+    width: 100%;
+    height: auto;
+}
+
+/* Ajouter plus de styles au besoin */
